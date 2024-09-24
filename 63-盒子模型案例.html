@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        #box {
+            width: 239px;
+            height: 333px;
+            /* background-color: yellow; */
+            margin: 0 auto;
+            padding: 16px 10px 11px 11px;
+
+        }
+
+        .title {
+            width: 233px;
+            height: 19px;
+            border-left: 2px solid #254282;
+            padding-left: 5px;
+            color: #254282;
+            line-height: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            /* background-color: red; */
+
+        }
+
+        .bigpic {
+            width: 240px;
+            height: 170px;
+            margin-bottom: 17px;
+        }
+
+        .bigpic p {
+            width: 240px;
+            height: 26px;
+            background-color: #f6f7f8;
+            font-size: 12px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .smallpic {
+            width: 240px;
+            height: 117px;
+
+        }
+
+        .smallpic p {
+            font-size: 12px;
+            line-height: 17px;
+            /* 行高是说单行的高度，这里行高为34px，两行就得除二，几行除几。 */
+            text-align: center;
+            background-color: #f6f7f8;
+            width: 113px;
+        }
+
+        .smallpic img {
+            float: left;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="title">
+            国内图片
+        </div>
+        <div class="bigpic">
+            <img src="abcimg/63.1.png" alt="">
+            <p>舆论漩涡中的云南网红小英一家</p>
+        </div>
+        <div class="smallpic">
+            <div class="left">
+                <img src="abcimg/63.2.png" alt="">
+                <a href="www.baidu.com">
+                    <p>尼雅河畔新绿洲尼雅河畔新绿洲</p>
+                </a>
+
+            </div>
+            <div class="right">
+                <img src="abcimg/63.3.png" alt="">
+                <p>“急！救这头大象”“急！救这头</p>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

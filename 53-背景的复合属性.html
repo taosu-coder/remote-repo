@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* background-size只能单独用，不能复合 */
+            width: 700px;
+            height: 300px;
+            /* background-color: yellow;
+            background-image: url(abcimg/rich1.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;   */
+            /* 复合写法：  */
+            background: yellow url(abcimg/rich1.jpg) center fixed no-repeat;
+        }
+
+        .box2 {
+            width: 800px;
+            height: 300px;
+            background-color: yellow;
+            background: url(abcimg/rich1.jpg) no-repeat center top;
+            /* 复合写法里如果有的值没写，就会默认为没设置，比如box2复合里没有设置颜色，而单独设置了黄色，则复合里的没设置（即白色）会覆盖黄色，网页就会没有背景色。 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
