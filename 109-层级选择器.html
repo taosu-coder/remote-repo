@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子代选择器,亲儿子 > */
+        .box>li {
+            border: 1px solid red;
+        }
+
+        /* 后代选择器,空格 */
+        .box ul {
+            border: 1px solid blue;
+        }
+
+        /* 当前元素后第一个兄弟,+ */
+        .chlid+li {
+            background-color: aqua;
+        }
+
+        .container+p {
+            background-color: yellow;
+        }
+
+        /* 当前元素后所有亲兄弟,~ */
+        .container~p {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>b111
+            <ul>
+                <li>111-1</li>
+                <li>111-2</li>
+            </ul>
+        </li>
+        <li class="chlid">c111</li>
+        <li>c222</li>
+        <li>c333</li>
+    </ul>
+
+    <div class="container">div111</div>
+    <p>p111</p>
+    <p>p222</p>
+    <div>
+        <p>p444-1</p>
+    </div>
+</body>
+
+</html>

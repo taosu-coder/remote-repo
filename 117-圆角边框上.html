@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: red;
+            border-radius: 10px 30px;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: yellow;
+            border-radius: 10px 30px 50px;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: pink;
+            border-radius: 10px 30px 50px 70px;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: chocolate;
+            border-top-left-radius: 20px;
+        }
+
+        /* 一个值表示四个角一致
+        两个值 左上右下，左下右上，对角线一致
+        三个值左上，左下右上，右下
+        四个值顺时针
+        支持四个角分别设置border-top-left-radius先垂直再水平 */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+</body>
+
+</html>

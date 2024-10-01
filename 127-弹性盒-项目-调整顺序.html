@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+
+        .div1 {
+            order: 1;
+        }
+
+        .div3 {
+            order: -1;
+        }
+
+        /* order值越大越靠后，order默认值为0，支持正负数 */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="div1">111</div>
+        <div class="div2">222</div>
+        <div class="div3">333</div>
+        <div class="div4">444</div>
+        <div class="div5">555</div>
+    </div>
+</body>
+
+</html>

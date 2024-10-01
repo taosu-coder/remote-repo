@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 所有弹性盒属性都要是弹性盒display：flex；！ */
+        /* 弹性盒主轴方向
+        flex-direction: row；    默认方向，水平方向
+        flex-direction: column； 垂直方向 */
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+    </div>
+</body>
+
+</html>

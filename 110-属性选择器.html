@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [class],[input]所有class,input属性的 */
+        [class] {
+            background: green;
+        }
+
+        /* div[class],input[type]div下class属性的 */
+        div[class] {
+            background-color: yellow;
+        }
+
+        /* 完全匹配,完全符合该样式的 */
+        div[class=box1] {
+            border: 1px solid red;
+        }
+
+        /* 包含匹配,只要div下class属性值为box3的 */
+        div[class~=box3] {
+            border: 1px solid blue;
+        }
+
+        input[type] {
+            background-color: pink;
+        }
+
+        /* 模糊匹配:^以此开头,$以此结尾,*包含此字符 */
+        input[name^="n"] {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">div-11111</div>
+    <div class="box2 box3">div-22222</div>
+    <div>div-33333</div>
+    <div class="box1">div-44444</div>
+    <div class="box1 box3">div-555555555555555</div>
+    <p class="p1">p-11111</p>
+    <p class="p2">p-22222</p>
+    <p>p-33333</p>
+
+    <h1>注册页面</h1>
+    <div>
+        用户名:<input type="text" name="name"><br>
+        密码:<input type="password" name="password"><br>
+        年龄:<input type="number" name="number"><br>
+        邮箱:<input type="email" name="email"><br>
+    </div>
+</body>
+
+</html>

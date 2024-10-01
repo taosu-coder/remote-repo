@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            margin: 0 auto;
+            /* 修改： */
+            /* overflow: hidden;  */
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box .item {
+            float: left;
+            width: 148px;
+            background-color: blue;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid blue;
+            color: white;
+            /* 修改 */
+            position: relative;
+        }
+
+        .item:hover {
+            background-color: aqua;
+        }
+
+        .item ul {
+            display: none;
+            background-color: white;
+            color: black;
+            /* 修改 */
+            position: absolute;
+            left: 0;
+            top: 30px;
+            width: 148px;
+
+        }
+
+        .item:hover ul {
+            display: block;
+        }
+
+        .item li:hover {
+            color: lightskyblue;
+        }
+
+        .content {
+            height: 100px;
+            background-color: aquamarine;
+        }
+
+        /* 二次修改 */
+        .box::after {
+            content: "";
+            clear: both;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="box">
+        <li class="item">视频教程
+            <ul>
+                <li>全部视频教程</li>
+                <li>HTML5视频教程</li>
+                <li>JAVA视频教程</li>
+                <li>PYTHON视频教程</li>
+            </ul>
+        </li>
+        <li class="item">认证考试
+            <ul>
+                <li>pmp</li>
+                <li>红帽</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="content">11111111111122222222</div>
+</body>
+
+</html>

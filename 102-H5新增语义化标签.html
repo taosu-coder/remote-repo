@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        header,
+        footer {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: orange;
+        }
+
+        section {
+            height: calc(100% - 100px);
+            background-color: white;
+        }
+
+        nav,
+        aside {
+            width: 100px;
+            height: 100%;
+            background-color: #ccc;
+            float: left;
+        }
+
+        main {
+            width: calc(100% - 200px);
+            height: 100%;
+            float: left;
+        }
+
+        article {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <section>
+        <nav>
+            <ul>
+                <li id="">111</li>
+                <li id="">222</li>
+                <li id="">333</li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <header>article-header</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam vel error optio. Facere, debitis!
+                    Accusamus mollitia id totam quisquam dolore, repellendus quae qui similique quod neque alias
+                    asperiores
+                    at odio.</p>
+                <header>article-footer</header>
+            </article>
+        </main>
+        <aside></aside>
+    </section>
+    <footer>footer</footer>
+</body>
+
+</html>

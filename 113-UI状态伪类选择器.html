@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* enabled对可用状态元素应用 */
+        input:enabled {
+            background-color: aqua;
+        }
+
+        /* disabled对不可用状态元素应用 */
+        input:disabled {
+            background-color: yellow;
+        }
+
+        /* focus焦点，对选中的元素应用 */
+        input:focus {
+            background-color: blue;
+        }
+
+        /* checked勾选之后的元素应用,注意checkbox有默认样式，要去掉（appearance:none;)后自己设置样式再应用*/
+        input[type=checkbox] {
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+        }
+
+        input:checked {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        用户名<input type="text"><br>
+        密码<input type="password"><br>
+        记住用户名<input type="checkbox"><br>
+        邮箱<input type="email" disabled><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

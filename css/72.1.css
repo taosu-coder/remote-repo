@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.con {
+    width: 964px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 110px;
+    /* background-color: yellow; */
+}
+
+.logo {
+    height: 110px;
+    width: 260px;
+    background-image: url(../abcimg/72.1.png);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.headerright {
+    float: right;
+}
+
+.headerright ul {
+    height: 44px;
+    line-height: 44px;
+    margin-top: 13px;
+
+}
+
+.headerright li {
+    float: left;
+    font-size: 13px;
+
+}
+
+.headerright li a {
+    border-right: 1px solid #bdabbd;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #ababab;
+}
+
+.headerright .last {
+    border: 0;
+    padding-right: 0;
+}
+
+.headerright li .active {
+    color: #ed164b;
+}
+
+.search {
+    float: right;
+    width: 236px;
+    height: 28px;
+    border: 1px solid #d1d1d1;
+}
+
+.search input {
+    border: 0;
+    outline: none;
+}
+
+.search .left {
+    width: 197px;
+    height: 28px;
+    float: left;
+    padding-left: 13px;
+}
+
+.search .right {
+    height: 28px;
+    width: 26px;
+    float: right;
+    background-image: url(../abcimg/72.3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    /* 不知道哪里来的背景色，只能改成底色 */
+}
+
+.nav {
+    height: 52px;
+    line-height: 52px;
+    border-top: 1px solid #657588;
+    background-color: #123960;
+    color: white;
+}
+
+.nav li {
+    float: left;
+    font-size: 16px;
+    padding-right: 76px;
+}
+
+.banner {
+    height: 383px;
+    /* background-image: url(../abcimg/72.4.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* 可以简写为：  */
+    background: url(../abcimg/72.4.png) no-repeat center;
+    margin-bottom: 52px;
+}
+
+.list {
+    height: 214px;
+    /* background-color: aqua; */
+    margin-bottom: 35px;
+}
+
+.item {
+    height: 212px;
+    width: 303px;
+    border: 1px solid #cccccc;
+    float: left;
+    margin-right: 24px;
+}
+
+.list p {
+    height: 49px;
+    line-height: 49px;
+    font-size: 16px;
+    padding-left: 28px;
+    color: black;
+}
+
+/* img是内联块元素与p之间有缝隙，改成块元素属性去掉缝隙 */
+.item img {
+    display: block;
+}
+
+.list .itemlast {
+    margin-right: 0;
+}
+
+.footer {
+    height: 206px;
+    border-top: 1px solid #cccccc;
+    background-image: url(../abcimg/72.8.png);
+    background-repeat: repeat;
+}
+
+.footer ul {
+    height: 84px;
+    line-height: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ecebeb;
+}
+
+.footer ul li {
+    width: 212px;
+    padding-left: 28px;
+    font-size: 12px;
+    color: #336699;
+    float: left;
+}
+
+.footer p {
+    height: 61px;
+    line-height: 61px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.footer span {
+    color: #0096da;
+}

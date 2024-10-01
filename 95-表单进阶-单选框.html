@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>表单进阶</h1>
+    <div>你对京东首页的满意度如何</div>
+    <!-- type=text是文本框，radio是单选框 -->
+    <!-- name用于分组，aaa组单选，bbb组单选 -->
+    <!-- checked使网页有默认选项，加在哪个选项哪个就是默认选项 -->
+    <div>
+        <input type="radio" name="aaa" checked="checked">非常满意
+    </div>
+    <div>
+        <input type="radio" name="aaa">满意
+    </div>
+    <div>
+        <input type="radio" name="aaa">一般满意
+    </div>
+    <div>
+        <input type="radio" name="aaa">不满意
+    </div>
+    <div>你的性别</div>
+    <!-- label使在网页上鼠标点击“男”也能选中单选框，要对应id名 -->
+    <!-- checked="checked"可以简写为checked -->
+    <div>
+        <input type="radio" name="bbb" id="man" checked>
+        <label for="man">男</label>
+    </div>
+    <div>
+        <input type="radio" name="bbb" id="women">
+        <label for="women">女</label>
+    </div>
+</body>
+
+</html>

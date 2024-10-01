@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .box1 div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+
+        .box2 span {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+
+        .box3 div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+            margin: auto;
+        }
+
+        /* 影响：
+        1.子元素默认横向排列
+        2.如果子元素为行内元素，父盒子是弹性盒，则子盒子变成块元素
+        3.如果父盒子为弹性盒，当子盒子（只有一个）时margin：auto；会垂直水平居中 */
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div>111</div>
+        <div>222</div>
+    </div>
+    <div class="box2">
+        <span>111</span>
+        <span>222</span>
+    </div>
+    <div class="box3">
+        <div>111</div>
+    </div>
+</body>
+
+</html>

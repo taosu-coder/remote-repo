@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first-child表示li下第一个元素 */
+        ul li:first-child {
+            background-color: yellow;
+        }
+
+        /* last-child表示li下第一个元素 */
+        ul li:last-child {
+            background-color: blue;
+        }
+
+        /* nth-child(n)表示第n个,偶数可表示为2n或even,奇数可表示为2n+1或2n-1或odd */
+        li:nth-child(3) {
+            background-color: pink;
+        }
+
+        /* only-child表示p下只有一个元素的 */
+        div p:only-child {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+        <li>5555</li>
+    </ul>
+
+    <div>
+        <p>6666</p>
+        <p>7777</p>
+    </div>
+    <div>
+        <p>8888</p>
+    </div>
+    <div></div>
+</body>
+
+</html>

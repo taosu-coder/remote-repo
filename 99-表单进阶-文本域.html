@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文本域用css来设置大小，本身的cols和rows不好用 */
+        textarea {
+            width: 300px;
+            height: 300px;
+            /* resize重新设置大小，vertical垂直方向可变动、horizontal水平方向、both两个方向都可以变动、none都不可以。右下角小三角拖动*/
+            resize: horizontal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>多行文本输入框-文本域</h1>
+    <!-- placeholder是预期值提示，就是提示文字 -->
+    <!-- textarea的value写在双标签内部，不要有空格和换行，会在网页上显示 -->
+    <textarea name="" id="" placeholder="请输入你的意见"></textarea>
+    <textarea name="" id="" placeholder="请输入你的意见">提前设置好的value</textarea>
+</body>
+
+</html>

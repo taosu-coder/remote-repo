@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* float半脱离文档流，文字环绕 */
+            /* float: left; */
+            /* absolute全脱离文档流，不会文字环绕，会被遮盖 */
+            position: absolute;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. quasi est ducimus aut sed autem, officiis,
+        esse adipisci, expedita a sit. Distinctio, inventore ratione! Necessitatibus recusandae vel et culpa nam.
+    </div>
+</body>
+
+</html>

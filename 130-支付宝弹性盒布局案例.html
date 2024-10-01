@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow: hidden;
+        }
+
+        .div1 {
+            width: 955px;
+            height: 1425px;
+            margin: 0 auto;
+            background: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 127px;
+            background: #242a3a;
+            line-height: 127px;
+            display: flex;
+            color: white;
+        }
+
+        header i {
+            font-size: 48px;
+            width: 117px;
+            text-align: center;
+        }
+
+        header span {
+            height: 127px;
+            font-size: 40px;
+            flex: 1;
+
+        }
+
+        footer {
+            height: 136px;
+            background: gray;
+        }
+
+        section {
+            flex: 1;
+            /* background: yellow; */
+        }
+
+        .main {
+            display: flex;
+            height: 278px;
+            background: #242a3a;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .main i {
+            font-size: 105px;
+        }
+
+        .main span {
+            font-size: 37px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <header>
+            <i class="iconfont icon-zixun"></i>
+            <span>搜索</span>
+            <i class="iconfont icon-wode"></i>
+            <i class="iconfont icon-fangdajing"></i>
+            <i class="iconfont icon-jia"></i>
+        </header>
+        <section>
+            <div class="main">
+                <div>
+                    <i class="iconfont icon-zanting3"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-31"></i>
+                    <span>付款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-qianbao"></i>
+                    <span>卡券</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-zhifu-01"></i>
+                    <span>咻一咻</span>
+                </div>
+
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

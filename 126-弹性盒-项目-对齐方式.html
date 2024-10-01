@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box div {
+            /* width: 50px; */
+            height: 50px;
+            /* stretch  拉伸，撑满高度。高度取决于谁是主轴，注释掉 */
+            border: 1px dashed red;
+        }
+
+        .box div:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        .box div:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .box div:nth-child(3) {
+            align-self: center;
+        }
+
+        .box div:nth-child(4) {
+            align-self: baseline;
+        }
+
+        .box div:nth-child(5) {
+            align-self: stretch;
+        }
+
+        /* align-self 用于单独设置每个小盒子（项目） */
+        /* 设置了主轴为垂直方向，侧轴为水平方向,align是侧轴：
+            flex-start  从开始方向对齐，即左对齐
+            flex-end    从结束方向对齐，即右对齐
+            center      居中对齐
+            baseline    效果与start一样
+            stretch   拉伸，撑满高度，没设置高度就会撑满父盒子高度，高度取决于谁是主轴，这高度为box的width（默认）*/
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+        <div>555</div>
+    </div>
+</body>
+
+</html>

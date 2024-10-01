@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* span标签为行内元素，不能设置宽高，加绝对定位后变成块元素，宽高生效 */
+            position: absolute;
+        }
+    </style>
+    <!-- 把行内元素变成块元素的方法： -->
+    <!-- 1.display:block;
+          2.position:absolute;
+          3.float:left; -->
+</head>
+
+<body>
+    <span>sdaisd</span>
+</body>
+
+</html>

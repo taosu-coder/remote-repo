@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap;不折行，默认
+            flex-wrap: wrap;折行 */
+            align-content: space-around;
+            /* 没设置主轴方向，默认主轴水平方向，侧轴为垂直方向,align是侧轴：
+            flex-start     从开始方向对齐，即上对齐
+            flex-end       从结束方向对齐，即下对齐
+            center         居中对齐
+            space-between  贴边两端对齐
+            space-around   等距离环绕对齐 */
+
+        }
+
+        .box div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+    </div>
+</body>
+
+</html>

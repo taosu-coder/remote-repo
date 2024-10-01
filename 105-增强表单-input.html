@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 注意：表单是为了给后端提供数据，因此每个属性都要name和要与form搭配使用 -->
+    <form action="">
+        <div>选择颜色：<input type="color"></div>
+        <div>邮箱：<input type="email" name="email"></div>
+        <div>网址:<input type="url" name="url"></div>
+        <div>电话号码:<input type="tel" name="tel"></div>
+        <div>滑块: <input type="range" name="range" min="100" max="200" value="100" step="10"></div>
+        <!-- min是滑块最小值,max是最大值,value是初始默认值,step是步长 -->
+        <div>数字类型: <input type="number" value="10" step="10"></div>
+        <!-- min是数字最小值,max是最大值,value是初始数字几,step是步长 -->
+        <div><input type="search"></div>
+        <!-- search搜索框,输入内容后最后会有个×,可以快速清除内容 -->
+        <div><input type="date"></div>
+        <div><input type="month"></div>
+        <div><input type="week"></div>
+        <div><input type="datetime-local" name="datetime"></div>
+        <!-- date年月日,month年月,week年周,datetime-local年月日时间 -->
+        <div><input type="submit"></div>
+    </form>
+
+
+</body>
+
+
+</html>

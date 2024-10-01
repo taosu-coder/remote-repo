@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- autofocus自动聚焦,required必填项,multiple可填多个地址,逗号隔开,pattern正则表达式规定格式,title鼠标滑过,placeholder预期值 -->
+    <form>
+        <div>用户名: <input type="text" name="name" autofocus></div>
+        <div>
+            邮箱: <input type="email" name="email" required multiple>
+        </div>
+        <div>
+            登录id: <input type="text" name="id" pattern="[1-9][a-z]{5}" title="一个数字五个小写字母" placeholder="输入内容:一个数字五个小写字母">
+        </div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
