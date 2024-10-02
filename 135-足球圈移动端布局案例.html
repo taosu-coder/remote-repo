@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont (2).css">
     <style>
         * {
             margin: 0;
@@ -55,31 +56,158 @@
 
         section {
             flex: 1;
+            overflow: auto;
+            /* 溢出隐藏 */
+        }
+
+        section ul {
+            height: 35px;
             display: flex;
+            line-height: 35px;
+            justify-content: space-around;
+            text-align: center;
+            color: #626262;
+            font-size: 13px;
+            background-color: white;
+            /* 粘性定位，固定在上面 */
+            position: sticky;
+            top: 0px;
+            /* 固定在哪里 */
+        }
+
+        section ul li {
+            flex: 1;
+        }
+
+        section ul li:hover {
+            color: #3bd166;
+            border-bottom: 2px solid #3bd166;
+        }
+
+        section .list {
+            display: flex;
+            flex-direction: space-around;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section .list div {
+            width: 49%;
+            /* height: 192px; */
+            margin-top: 4px;
+            border: 1px solid gray;
+        }
+
+        .list div img {
+            width: 100%;
+        }
+
+        .list div span {
+            height: 26px;
+            line-height: 26px;
+            font-size: 12px;
+            padding-left: 20px;
         }
 
         footer {
             height: 44px;
-            background-color: gray;
+            background-color: white;
+            display: flex;
+            color: #d5d7d6;
+        }
+
+        footer .box {
+            height: 100%;
+            display: flex;
+            flex: 1;
+        }
+
+        footer .box div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer .box div i {
+            font-size: 17px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        footer .box div span {
+            font-size: 12px;
+            height: 19px;
+        }
+
+        footer .box div:hover {
+            color: #0cc440;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div>热点</div>
-            <div>关注</div>
-        </header>
-        <section>
-            <ul>
-                <li>足球现场</li>
-                <li>足球生活</li>
-                <li>足球美女</li>
-            </ul>
-        </section>
-        <footer></footer>
-    </div>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <div class="list">
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="box">
+            <div>
+                <i class="iconfont icon-shouye"></i>
+                <span>首页</span>
+            </div>
+            <div>
+                <i class="iconfont icon-fangdajing"></i>
+                <span>发现</span>
+            </div>
+            <div>
+                <i class="iconfont icon-zhaoxiangji"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-wode"></i>
+                <span>我的</span>
+            </div>
+            <div>
+                <i class="iconfont icon-tuichu"></i>
+                <span>退出</span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
