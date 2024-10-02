@@ -112,14 +112,14 @@
         footer {
             height: 44px;
             background-color: white;
-            display: flex;
+            /* display: flex; */
             color: #d5d7d6;
         }
 
         footer .box {
             height: 100%;
             display: flex;
-            flex: 1;
+            /* flex: 1; */
         }
 
         footer .box div {
@@ -136,6 +136,7 @@
             line-height: 20px;
         }
 
+        /* 在这里弹性盒下宽度自适应，测量图标和字之间高度折半，拉辅助线到上下折半的高度，分别测量图标和字的高度，最后justify-content: center;主轴居中就可以了  */
         footer .box div span {
             font-size: 12px;
             height: 19px;
@@ -143,6 +144,25 @@
 
         footer .box div:hover {
             color: #0cc440;
+        }
+
+        footer .box div:nth-child(3) {
+            position: relative;
+        }
+
+        footer .box div:nth-child(3) i {
+            position: absolute;
+            height: 52px;
+            width: 52px;
+            border: 1px solid #d5d7d6;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -26px;
+            top: -8px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 52px;
+            background-color: white;
         }
     </style>
 </head>

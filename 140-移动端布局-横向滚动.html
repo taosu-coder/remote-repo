@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 43px;
+            background-color: gray;
+        }
+
+        header ul {
+            display: flex;
+            flex: 1;
+            overflow: auto;
+        }
+
+        header ul li {
+            flex-shrink: 0;
+            line-height: 43px;
+            padding: 0 10px;
+        }
+
+        header ul li:hover {
+            color: red;
+            background: white;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            overflow: auto;
+        }
+
+        section ul {
+            width: 84px;
+            background-color: #f8f8f8;
+            overflow: auto;
+        }
+
+        section>div {
+            flex: 1;
+            /* background-color: yellow; */
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* 内容多行间距作用不明显，少就明显 */
+            justify-content: center;
+            overflow: auto;
+        }
+
+        section ul li {
+            height: 48px;
+            line-height: 48px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        section ul li:hover {
+            color: red;
+        }
+
+        footer {
+            height: 50px;
+            background-color: gray;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        section .content>div {
+            height: 101px;
+            width: 33.33%;
+            text-align: center;
+        }
+
+        section .content img {
+            height: 50px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+        </ul>
+    </header>
+    <section>
+        <ul>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+        </ul>
+        <div class="content">
+            <p></p>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="abcimg/139.1.png" alt="">
+                <p>电脑</p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
