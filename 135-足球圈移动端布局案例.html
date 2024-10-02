@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 45px;
+            background-color: #0cc440;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header div {
+            width: 62px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        header div:nth-child(1) {
+            color: white;
+            background-color: #63d985;
+            border-radius: 9px 0 0 9px;
+        }
+
+        header div:nth-child(2) {
+            color: #b1e4bb;
+            background-color: #3bd166;
+            border-radius: 0 9px 9px 0;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+        }
+
+        footer {
+            height: 44px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>热点</div>
+            <div>关注</div>
+        </header>
+        <section>
+            <ul>
+                <li>足球现场</li>
+                <li>足球生活</li>
+                <li>足球美女</li>
+            </ul>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

@@ -12,15 +12,11 @@
             padding: 0;
         }
 
-        html {
-            overflow: hidden;
-        }
-
         .div1 {
             width: 955px;
             height: 1425px;
             margin: 0 auto;
-            background: blue;
+            background: pink;
             display: flex;
             flex-direction: column;
         }
@@ -48,28 +44,99 @@
 
         footer {
             height: 136px;
-            background: gray;
+            background: white;
+            display: flex;
+        }
+
+        footer div {
+            flex: 1;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #c0c2c1;
+        }
+
+        footer div i {
+            height: 67px;
+            line-height: 67px;
+            text-align: center;
+            font-size: 58px;
+        }
+
+        footer div span {
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* 可以直接合并成footer div：hover */
+        footer div:hover {
+            color: #06aaf2;
         }
 
         section {
             flex: 1;
-            /* background: yellow; */
+            background: #f4f5f9;
         }
 
         .main {
             display: flex;
             height: 278px;
             background: #242a3a;
-            flex-direction: row;
             justify-content: space-around;
+            align-items: center;
+        }
+
+        .main div {
+            width: 115px;
+            height: 170px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .main i {
             font-size: 105px;
+            text-align: center;
         }
 
         .main span {
-            font-size: 37px;
+            font-size: 34px;
+            text-align: center;
+        }
+
+        .list {
+            display: flex;
+            height: 637px;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        .list div {
+            width: 25%;
+            height: 214px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .list div i {
+            font-size: 61px;
+            color: orange;
+        }
+
+        .list div span {
+            font-size: 28px;
+        }
+
+        .pic {
+            margin-top: 36px;
         }
     </style>
 </head>
@@ -101,10 +168,78 @@
                     <i class="iconfont icon-zhifu-01"></i>
                     <span>咻一咻</span>
                 </div>
-
+            </div>
+            <div class="list">
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div><i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-feiji"></i>
+                    <span>信用卡还款</span>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="abcimg/130.1.png" alt="">
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div>
+                <i class="iconfont icon-zhifubao"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-zhifubao"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-zhifubao"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-zhifubao"></i>
+                <span>支付宝</span>
+            </div>
+        </footer>
     </div>
 </body>
 
