@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            animation: mymove 5s ease 2s 3;
+            /* mymove动画名称； 1s动画持续时间； ease动画类型；3循环次数，无限次循环infinite；alternate是否反方向运动； */
+        }
+
+        @keyframes mymove {
+
+            /* form {
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+            }
+
+            to {
+                width: 400px;
+                height: 400px;
+                background-color: red;
+            } */
+            0% {
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+            }
+
+            30% {
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+            }
+
+            60% {
+                width: 400px;
+                height: 300px;
+                background-color: red;
+            }
+
+            90% {
+                width: 400px;
+                height: 500px;
+                background-color: green;
+            }
+
+            100% {
+                width: 600px;
+                height: 500px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            border: 3px solid gray;
+            /* overflow: hidden; */
+            /* 放大时，有边框的话会超出边框不美观，可以溢出隐藏效果更好 */
+        }
+
+        img {
+            width: 100%;
+            transition: all 2s;
+        }
+
+        div:hover img {
+            transform: scale(0.5)
+        }
+
+        /* transform: scale()的值
+        0.01-0.99 缩小
+        >1.01 放大 */
+
+        /* transform: scaleX( )只在x轴缩放
+        transform: scaleY( )只在y轴缩放 */
+
+        /* 默认从中心点缩放，改变中心点：
+        transform-origin:left top;/bottom center;  */
+    </style>
+</head>
+
+<body>
+    <div><img src="abcimg/rich1.jpg" alt=""></div>
+</body>
+
+</html>

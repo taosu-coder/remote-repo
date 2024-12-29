@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont (2).css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            font-size: 26.67vw;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 0.45rem;
+            background-color: #0cc440;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header div {
+            width: 0.62rem;
+            height: 0.24rem;
+            line-height: 24px;
+            text-align: center;
+            font-size: 0.12rem;
+        }
+
+        header div:nth-child(1) {
+            color: white;
+            background-color: #63d985;
+            border-radius: 0.09rem 0 0 0.09rem;
+        }
+
+        header div:nth-child(2) {
+            color: #b1e4bb;
+            background-color: #3bd166;
+            border-radius: 0 0.09rem 0.09rem 0;
+        }
+
+        section {
+            flex: 1;
+            overflow: auto;
+            /* 溢出隐藏 */
+        }
+
+        section ul {
+            display: flex;
+            line-height: 35px;
+            justify-content: space-around;
+            text-align: center;
+            color: #626262;
+            font-size: 0.13rem;
+            background-color: white;
+            /* 粘性定位，固定在上面 */
+            position: sticky;
+            top: 0rem;
+            /* 固定在哪里 */
+        }
+
+        section ul li {
+            flex: 1;
+        }
+
+        section ul li:hover {
+            color: #3bd166;
+            border-bottom: 0.02rem solid #3bd166;
+        }
+
+        section .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section .list div {
+            width: 49%;
+            margin-top: 0.04rem;
+            border: 0.01rem solid gray;
+        }
+
+        .list div img {
+            width: 100%;
+        }
+
+        .list div span {
+            height: 0.26rem;
+            line-height: 26px;
+            font-size: 0.12rem;
+            padding-left: 0.2rem;
+        }
+
+        footer {
+            height: 0.44rem;
+            background-color: white;
+            /* display: flex; */
+            color: #d5d7d6;
+        }
+
+        footer .box {
+            height: 100%;
+            display: flex;
+            /* flex: 1; */
+        }
+
+        footer .box div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer .box div i {
+            font-size: 0.17rem;
+            height: 0.20rem;
+            line-height: 20px;
+        }
+
+        footer .box div span {
+            font-size: 0.12rem;
+            height: 0.19rem;
+        }
+
+        footer .box div:hover {
+            color: #0cc440;
+        }
+
+        footer .box div:nth-child(3) {
+            position: relative;
+        }
+
+        footer .box div:nth-child(3) i {
+            position: absolute;
+            height: 0.52rem;
+            width: 0.52rem;
+            border: 0.01rem solid #d5d7d6;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -0.26rem;
+            top: -0.08rem;
+            text-align: center;
+            font-size: 0.3rem;
+            line-height: 52px;
+            background-color: white;
+        }
+
+        .iconfont {
+            font-size: .8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <div class="list">
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+            <div>
+                <img src="abcimg/135.1.png" alt="">
+                <span>小丸子啊小丸子</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="box">
+            <div>
+                <i class="iconfont icon-shouye"></i>
+                <span>首页</span>
+            </div>
+            <div>
+                <i class="iconfont icon-fangdajing"></i>
+                <span>发现</span>
+            </div>
+            <div>
+                <i class="iconfont icon-zhaoxiangji"></i>
+            </div>
+            <div>
+                <i class="iconfont icon-wode"></i>
+                <span>我的</span>
+            </div>
+            <div>
+                <i class="iconfont icon-tuichu"></i>
+                <span>退出</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

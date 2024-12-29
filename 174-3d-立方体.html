@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            border: 5px solid gray;
+            transform-style: preserve-3d;
+            position: relative;
+            transform: rotateX(30deg) rotateY(30deg);
+            animation: run 5s linear infinite;
+        }
+
+        @keyframes run {
+            0% {
+                transform: rotateX(30deg) rotateY(30deg);
+            }
+
+            50% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+
+            100% {
+                transform: rotateX(30deg) rotateY(30deg);
+            }
+        }
+
+        .box div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .box div:nth-child(1) {
+            background-color: gray;
+            transform: translateZ(100px);
+        }
+
+        .box div:nth-child(2) {
+            background-color: red;
+            transform: translateX(100px) rotateY(90deg);
+        }
+
+        .box div:nth-child(3) {
+            background-color: green;
+            transform: translateY(100px) rotateX(90deg);
+        }
+
+        .box div:nth-child(4) {
+            background-color: pink;
+            transform: translateY(-100px) rotateX(-90deg);
+        }
+
+        .box div:nth-child(5) {
+            background-color: yellow;
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+
+        .box div:nth-child(6) {
+            background-color: blue;
+            transform: translateZ(-100px);
+        }
+
+        /* 旋转90deg正负代表顺逆时针，都可以，只是字可能会反可以调整 */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>

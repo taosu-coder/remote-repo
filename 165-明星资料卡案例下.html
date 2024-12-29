@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        .box1 {
+            width: 350px;
+            height: 400px;
+            border: 5px solid gray;
+            position: relative;
+        }
+
+        h2,
+        p,
+        .musicbtn {
+            position: absolute;
+        }
+
+        .box1 .pic1 {
+            width: 100%;
+            transition: all 1s;
+        }
+
+        .box1:hover .pic1 {
+            transform: translatey(-20px);
+            opacity: 0.5;
+        }
+
+        .box1 h2 {
+            top: 100px;
+            left: 30px;
+            transform: translatey(-200px);
+            transition: all 1s;
+            color: white;
+        }
+
+        .box1:hover h2 {
+            transform: translatey(0px);
+        }
+
+        .box1 p {
+            left: 50px;
+            bottom: -20px;
+            transition: all 2s;
+            opacity: 0;
+        }
+
+        .box1:hover p {
+            transform: translatey(-200px);
+            opacity: 1;
+        }
+
+        .box1 .musicbtn {
+            width: 40px;
+            height: 40px;
+            right: 10px;
+            top: 10px;
+            transition: all 2s;
+            animation: run 1s linear infinite;
+            /* 关键帧动画 */
+        }
+
+        @keyframes run {
+            form {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* .box1:hover .musicbtn {
+            transform: rotate(360deg);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <img src="abcimg/1989 Polaroid/3.png" alt="" class="pic1">
+        <h2>Back to december</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae aut non itaque laudantium eius
+            deserunt, quod similique, nobis sequi, saepe temporibus quis maxime animi amet sapiente cupiditate. Error,
+            consequatur.</p>
+        <img src="abcimg/1989 Polaroid/musicBtn.png" alt="" class="musicbtn">
+    </div>
+</body>
+
+</html>

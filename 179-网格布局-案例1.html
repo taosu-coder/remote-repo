@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 650px;
+            height: 320px;
+            border: 3px solid gray;
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(6, 100px);
+            grid-template-areas: 'a a a a e e'
+                'a a a a f f'
+                'b b c d f f'
+            ;
+            gap: 10px 10px;
+            /* 加间隔，宽度加了五个10px。高度加了2个10px */
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .box img:nth-child(1) {
+            grid-area: a;
+        }
+
+        .box img:nth-child(2) {
+            grid-area: e;
+        }
+
+        .box img:nth-child(3) {
+            grid-area: b;
+        }
+
+        .box img:nth-child(4) {
+            grid-area: c;
+        }
+
+        .box img:nth-child(5) {
+            grid-area: d;
+        }
+
+        .box img:nth-child(6) {
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="abcimg/179/a1.png" alt="">
+        <img src="abcimg/179/a5.png" alt="">
+        <img src="abcimg/179/a2.png" alt="">
+        <img src="abcimg/179/a3.png" alt="">
+        <img src="abcimg/179/a4.png" alt="">
+        <img src="abcimg/179/a6.png" alt="">
+    </div>
+</body>
+
+</html>

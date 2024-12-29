@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+
+        }
+
+        li {
+            height: 50px;
+            width: 100px;
+            border: 1px solid gray;
+
+        }
+
+        /* transition加在li下是全部一起移到和移走都有动画，加在hover下就是要移上去才有动画效果移走没有效果，现在试验类型效果所以单独加 */
+        ul:hover li:nth-child(1) {
+            width: 600px;
+            transition: all 2s linear;
+
+
+        }
+
+        ul:hover li:nth-child(2) {
+            width: 600px;
+            transition: all 2s ease;
+
+
+        }
+
+        ul:hover li:nth-child(3) {
+            width: 600px;
+            transition: all 2s ease-in;
+
+
+        }
+
+        ul:hover li:nth-child(4) {
+            width: 600px;
+            transition: all 2s ease-out;
+
+
+        }
+
+        ul:hover li:nth-child(5) {
+            width: 600px;
+            transition: all 2s ease-in-out;
+
+
+        }
+
+        ul:hover li:nth-child(6) {
+            width: 600px;
+            transition: all 2s cubic-bezier(.1, .91, .84, .35);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(white 50%, black 50%);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        div::before {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* display: block; */
+            /* 父盒子有display：flex所以不用block */
+            border-radius: 50%;
+            background: radial-gradient(white 20%, black 30%);
+        }
+
+        div::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            background: radial-gradient(black 20%, white 30%);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
